@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- ====== HEAD optimizado para OG / Twitter / Netlify ====== -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ========= Ajusta SOLO ESTA constante ========= -->
+  <!-- Sustituye por tu subdominio real en Netlify -->
+  <!-- Ej.: https://camilo-portfolio.netlify.app -->
+  <script>
+    const BASE_URL = "https://camilb-portfolio.netlify.app";
+    document.write(
+      `<link rel="canonical" href="${BASE_URL}/">` +
+      `<meta property="og:url" content="${BASE_URL}/">` +
+      `<meta name="twitter:url" content="${BASE_URL}/">`
+    );
+  </script>
+  <!-- ============================================== -->
+
+  <title>Camilo Bustamante — Diseñador Gráfico & Director de Arte</title>
+  <meta name="description" content="Portafolio de Camilo Bustamante: branding, dirección de arte y social media. Disponible para proyectos en Santiago de Chile." />
+  <meta name="author" content="Camilo Bustamante" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+
+  <!-- ====== Robots ====== -->
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+  <meta name="googlebot" content="index,follow" />
+
+  <!-- ====== Open Graph ====== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Portafolio de Camilo Bustamante" />
+  <meta property="og:locale" content="es_CL" />
+  <meta property="og:title" content="Camilo Bustamante — Diseñador Gráfico & Director de Arte" />
+  <meta property="og:description" content="Branding, dirección de arte y social media. Disponible para proyectos." />
+
+  <!-- Imagen principal (horizontal 1200×630) -->
+  <meta property="og:image" content="https://camilob-portfolio.netlify.app/img/og/og-image-1200x630.png" />
+  <meta property="og:image:secure_url" content="https://camilob-portfolio.netlify.app/img/og/og-image-1200x630.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:alt" content="Camilo Bustamante — Diseñador Gráfico & Director de Arte" />
+
+  <!-- Imagen cuadrada secundaria (1080×1080), útil para WhatsApp/Telegram -->
+  <meta property="og:image" content="https://camilob-portfolio.netlify.app/img/og/og-image-1080x1080.png" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1080" />
+
+  <!-- ====== Twitter Cards ====== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Camilo Bustamante — Diseñador Gráfico & Director de Arte" />
+  <meta name="twitter:description" content="Branding, dirección de arte y social media. Disponible para proyectos." />
+  <meta name="twitter:image" content="https://camilob-portfolio.netlify.app/img/og/og-image-1200x630.png" />
+  <meta name="twitter:image:alt" content="Camilo Bustamante — Diseñador Gráfico & Director de Arte" />
+  <!-- Opcional: tu @ si lo tienen -->
+  <!-- <meta name="twitter:site" content="@tu_usuario" /> -->
+  <!-- <meta name="twitter:creator" content="@tu_usuario" /> -->
+
+  <!-- ====== Favicons / PWA (si los usas) ====== -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#000000" />
+
+  <!-- ====== Rendimiento ====== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet" />
+  <link rel="preload" href="/img/camilo-bustamante.png" as="image" imagesrcset="/img/camilo-bustamante.png 1x" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+  <!-- ====== Datos estructurados mínimos (Person) ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Camilo Bustamante",
+    "jobTitle": "Diseñador Gráfico & Director de Arte",
+    "image": "https://camilo-portfolio.netlify.app/img/camilo.jpg",
+    "url": "https://camilo-portfolio.netlify.app/",
+    "email": "mailto:camilo.designer92@gmail.com",
+    "telephone": "+56941522769",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Puente Alto",
+      "addressRegion": "Santiago",
+      "addressCountry": "CL"
+    },
+    "sameAs": [
+      "https://www.behance.net/camilobg",
+      "https://cl.linkedin.com/in/camilo-bustamante-guti%C3%A9rrez-7aaa7b36b"
+    ]
+  }
+  </script>
+
+  <!-- Extras útiles -->
+  <meta name="format-detection" content="telephone=no,address=no,email=no" />
+  <meta http-equiv="x-dns-prefetch-control" content="on" />
+
+  <link rel="icon" type="image/jpeg" href="img/camilo.jpg" sizes="any">
+
+</head>
+
+
+<body>
+    <div id="cursorGlow" class="cursor-glow"></div>
+
+    <header id="header" class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="nav-brand">CB.</a>
+                
+                <div class="desktop-nav">
+                    <a href="#about" class="nav-item">Sobre Mí</a>
+                    <a href="#experience" class="nav-item">Experiencia</a>
+                    <a href="#gallery" class="nav-item">Portfolio</a>
+                    <a href="#testimonials" class="nav-item">Testimonios</a>
+                    <a href="#contact" class="nav-item">Contacto</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+  <i id="menu-icon" class="ph ph-list" aria-hidden="true"></i>
+</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- OVERLAY + PANEL -->
+<div id="mobile-menu" class="mobile-menu-overlay hidden" role="dialog" aria-modal="true">
+  <div class="mobile-menu-panel" role="document">
+    <nav class="mobile-menu-nav" aria-label="Navegación móvil">
+      <a href="#about" class="mobile-nav-item">Sobre Mí</a>
+      <a href="#experience" class="mobile-nav-item">Experiencia</a>
+      <a href="#gallery" class="mobile-nav-item">Portfolio</a>
+      <a href="#testimonials" class="mobile-nav-item">Testimonios</a>
+      <a href="#contact" class="mobile-nav-item">Contacto</a>
+    </nav>
+    <a href="#contact" class="mobile-cta">Hablemos</a>
+  </div>
+</div>
+
+    <main>
+        <section id="hero" class="hero-section">
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="status-badge">
+        <div class="status-dot"></div>
+        Disponible para proyectos
+      </div>
+      <h1>Camilo Bustamante</h1>
+      <h2>Diseñador Gráfico & Director de Arte</h2>
+      <p>
+        Creativo, proactivo y con alta capacidad de adaptación. Especializado en branding, marketing digital y dirección de arte.
+      </p>
+      <a href="#contact" class="cta-button">
+        <i class="ph ph-chat-circle"></i>
+        Hablemos de tu proyecto
+      </a>
+    </div>
+
+    <div class="hero-image">
+      <img src="img/camilo-bustamante.png" alt="Camilo Bustamante">
+    </div>
+  </div>
+</section>
+
+
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title reveal">Sobre Mí</h2>
+                <div class="about-grid">
+                    <div class="about-card reveal">
+                        <div class="about-card-initials"><img src="img/camilo.jpg" alt="Camilo Bustamante"></div>
+                        <h3>Camilo Bustamante</h3>
+                        <div class="contact-info">
+                            <div class="info-item"><i class="ph ph-map-pin"></i><span>Puente Alto, Santiago</span></div>
+                            <div class="info-item"><i class="ph ph-phone"></i><span>(+56) 941 522 769</span></div>
+                            <div class="info-item"><i class="ph ph-envelope"></i><span>camilo.designer92@gmail.com</span></div>
+                            <div class="info-item"><i class="ph ph-clock"></i><span>Disponibilidad Inmediata</span></div>
+                        </div>
+                    </div>
+                    <div class="about-text reveal">
+  <h3>Mi Enfoque Creativo</h3>
+  <p>
+    Mi trabajo se orienta a desarrollar soluciones visuales que combinan estética y estrategia. Cada proyecto busca transmitir mensajes claros y memorables, ayudando a las marcas a conectar con su audiencia y alcanzar objetivos reales.
+  </p>
+  <p>
+    A lo largo de más de diez años he participado en ámbitos tan diversos como el visual merchandising, la dirección de arte, la producción audiovisual y la gestión de comunidades digitales. Esta experiencia me ha permitido comprender cada etapa del proceso creativo y aportar una mirada integral en los proyectos.
+  </p>
+  <p>
+    Hoy aplico ese aprendizaje en campañas digitales, diseño de marca y comunicación visual, integrando herramientas como <strong>Meta Ads</strong> y estrategias orgánicas en redes sociales. El objetivo es siempre el mismo: generar experiencias coherentes que fortalezcan la identidad de una marca y potencien su crecimiento.
+  </p>
+</div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section section-padding">
+  <div class="container">
+    <h2 class="section-title reveal">Experiencia Profesional</h2>
+    <div class="grid-2-col">
+
+      <div class="experience-card reveal">
+        <p class="date">2024 - JULIO 2025</p>
+        <h3>Director de Arte</h3>
+        <p class="company">Artífices Experimental Creative Studio</p>
+        <p>Dirección creativa de proyectos de branding y campañas digitales. Desarrollo de conceptos visuales, coordinación de equipo y supervisión de la producción gráfica y audiovisual para marcas de distintos sectores.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2022 - 2024</p>
+        <h3>Diseñador Gráfico y Community Manager</h3>
+        <p class="company">Cervecería el Principal, TÜbinger</p>
+        <p>Diseño de piezas gráficas y gestión de redes sociales. Creación de contenidos visuales que potenciaron la identidad de marca y consolidaron la comunidad digital de la cervecería.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2020 - 2021</p>
+        <h3>Diseñador Gráfico y Community Manager</h3>
+        <p class="company">Hummo</p>
+        <p>Diseño de branding y gestión de redes sociales para la marca. Desarrollo de material promocional y estrategias visuales que fortalecieron su posicionamiento digital.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2020 - 2021</p>
+        <h3>Diseñador Gráfico y Community Manager</h3>
+        <p class="company">Henry Tattoo</p>
+        <p>Gestión de la comunicación visual y digital del estudio. Diseño de campañas gráficas y administración de la comunidad online para atraer nuevos clientes.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2021</p>
+        <h3>Asistente de Diseño Gráfico</h3>
+        <p class="company">Aerovan</p>
+        <p>Apoyo en diseño gráfico para la marca de accesorios automotrices. Producción de material visual y digital para catálogos y campañas.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2018 - 2020</p>
+        <h3>Administración y Community Manager</h3>
+        <p class="company">Sátiro Tattoo Studio</p>
+        <p>Gestión administrativa y diseño de estrategias de comunicación digital. Creación de contenidos que impulsaron la visibilidad y atracción de clientes.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2014 - 2018</p>
+        <h3>Diseñador Gráfico</h3>
+        <p class="company">Todopoleras</p>
+        <p>Diseño de propuestas gráficas personalizadas y desarrollo de piezas visuales para clientes particulares y corporativos.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2015 - 2016 (Freelance)</p>
+        <h3>Diseñador Gráfico</h3>
+        <p class="company">Dr. Vidal</p>
+        <p>Creación de identidad visual, retoque digital y desarrollo de galerías en WordPress para proyectos de salud y bienestar.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2015 - 2016 (Freelance)</p>
+        <h3>Diseñador Gráfico</h3>
+        <p class="company">Entomología.cl</p>
+        <p>Diseño de identidad de marca, retoque digital y gestión de contenidos en WordPress para una plataforma científica.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2015 - 2016 (Freelance)</p>
+        <h3>Diseñador Gráfico</h3>
+        <p class="company">Desiertoflorido.cl</p>
+        <p>Desarrollo de identidad visual y gestión de galerías digitales en WordPress para proyectos culturales y turísticos.</p>
+      </div>
+
+      <div class="experience-card reveal">
+        <p class="date">2011 - 2012</p>
+        <h3>Visual Merchandising</h3>
+        <p class="company">Siete Comunicaciones</p>
+        <p>Diseño y montaje de espacios comerciales, con foco en exhibición de productos y experiencia de marca en el punto de venta.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        
+        <section id="gallery" class="gallery-section section-padding">
+            <div class="container">
+                <h2 class="section-title reveal">Portfolio</h2>
+                <p class="section-subtitle reveal">Una selección de mis trabajos más destacados en branding, social media y diseño gráfico.</p>
+                <div class="grid-3-col">
+                    
+                    <a href="https://www.behance.net/gallery/231916321/Social-media-Cerveza-Tuebinger" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/b56b94231916321.Y3JvcCwyOTUzLDIzMTAsNDgyLDA.png" alt="Social media Cerveza Tübinger"><div class="gallery-overlay"><h3>Social media Cerveza Tübinger</h3></div></a>
+                    <a href="https://www.behance.net/gallery/231911865/Social-media-MundoRaptorcl" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/2bcbdb231911865.Y3JvcCwzMjQyLDI1MzYsMjgwLDA.png" alt="Social media MundoRaptorcl"><div class="gallery-overlay"><h3>Social media MundoRaptorcl</h3></div></a>
+                    <a href="https://www.behance.net/gallery/231911545/Social-media-Blindatek" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/a0663c231911545.Y3JvcCwzMjQyLDI1MzYsMjgwLDA.png" alt="Social media Blindatek"><div class="gallery-overlay"><h3>Social media Blindatek</h3></div></a>
+                    <a href="https://www.behance.net/gallery/231911219/Social-media-Aerovan-Chile" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/60d09d231911219.Y3JvcCwzMjQyLDI1MzYsMjgwLDA.png" alt="Social media Aerovan Chile"><div class="gallery-overlay"><h3>Social media Aerovan Chile</h3></div></a>
+                    <a href="https://www.behance.net/gallery/231903703/Eventos-Cerveza-Tuebinger" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/a519e9231903703.Y3JvcCwzNjY2LDI4NjgsMTI3LDA.png" alt="Eventos Cerveza Tübinger"><div class="gallery-overlay"><h3>Eventos Cerveza Tübinger</h3></div></a>
+                    <a href="https://www.behance.net/gallery/231837767/New-Zealand-Beer-IPA-DAY-TUBINGER" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/04b425231837767.Y3JvcCwxNjY5LDEzMDYsMjUyLDA.png" alt="New Zealand Beer - IPA DAY TUBINGER"><div class="gallery-overlay"><h3>IPA DAY TUBINGER</h3></div></a>
+                    <a href="https://www.behance.net/gallery/231834859/Rediseno-Etiqueta-Merida-Beer" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/62eb01231834859.Y3JvcCwzODM1LDMwMDAsMzMyLDA.png" alt="Rediseño Etiqueta Merida Beer"><div class="gallery-overlay"><h3>Rediseño Etiqueta Merida Beer</h3></div></a>
+                    <a href="https://www.behance.net/gallery/231830133/Etiquetas-Brewmaster-Series-2025-Cerveza-Tubinger" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/e03f2f231830133.Y3JvcCwzODM1LDMwMDAsMzMyLDA.png" alt="Etiquetas Brewmaster Series 2025 - Cerveza Tubinger"><div class="gallery-overlay"><h3>Etiquetas Brewmaster Series 2025</h3></div></a>
+                    <a href="https://www.behance.net/gallery/136926591/Diseno-de-marca-para-salon-de-belleza-COOLBEAUTY" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/339e87136926591.Y3JvcCwyNTU2LDIwMDAsMjIxLDA.png" alt="Diseño de marca para salón de belleza, COOLBEAUTY"><div class="gallery-overlay"><h3>Branding COOLBEAUTY</h3></div></a>
+                    <a href="https://www.behance.net/gallery/136925665/Diseno-de-marca-VIBRANDO-KINE" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/765371136925665.Y3JvcCw0NDY0LDM0OTIsNDk3LDA.png" alt="Diseño de marca, VIBRANDO KINE"><div class="gallery-overlay"><h3>Branding VIBRANDO KINE</h3></div></a>
+                    <a href="https://www.behance.net/gallery/72720809/Virginia-Woolf-grafica" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/56bcbf72720809.Y3JvcCwyNzc3LDIxNzIsMCwxNDE2.jpg" alt="Virginia Woolf grafica"><div class="gallery-overlay"><h3>Virginia Woolf Gráfica</h3></div></a>
+                    <a href="https://www.behance.net/gallery/72720617/Grafica-HJ" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/123ffc72720617.Y3JvcCw0NDgwLDM1MDQsMCwxNDg1.jpg" alt="Grafica HJ"><div class="gallery-overlay"><h3>Gráfica HJ</h3></div></a>
+                    <a href="https://www.behance.net/gallery/67143749/Delights-Of-Kymm" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/ed171167143749.Y3JvcCwzMTk2LDI0OTksMTUwLDA.jpg" alt="Delights Of Kymm"><div class="gallery-overlay"><h3>Delights Of Kymm</h3></div></a>
+                    <a href="https://www.behance.net/gallery/67025225/Pendonhr_inkpetu" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/dc8f1367025225.Y3JvcCwxMDc2LDg0MSwwLDQ5OA.jpg" alt="Pendón.hr_inkpetu"><div class="gallery-overlay"><h3>Pendón hr_inkpetu</h3></div></a>
+                    <a href="https://www.behance.net/gallery/67025153/sta-carolina_rediseno-etiqueta" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/62f3d567025153.Y3JvcCwxMTk0LDkzNCwxMDMsMA.jpg" alt="sta. carolina_rediseño etiqueta"><div class="gallery-overlay"><h3>Rediseño Etiqueta Sta. Carolina</h3></div></a>
+                    <a href="https://www.behance.net/gallery/67025057/Imer-soluciones_logo" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/d1960967025057.Y3JvcCwxMTE4LDg3NSwxMTAsMA.jpg" alt="Imer soluciones_logo"><div class="gallery-overlay"><h3>Logo Imer Soluciones</h3></div></a>
+                    <a href="https://www.behance.net/gallery/67024997/ROSITA_rediseno-revista" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/942c0567024997.Y3JvcCwxMzQyLDEwNTAsMjksMA.jpg" alt="ROSITA_rediseño revista"><div class="gallery-overlay"><h3>Rediseño Revista ROSITA</h3></div></a>
+                    <a href="https://www.behance.net/gallery/67024515/Prop-tpresentacion_henry" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/33764767024515.Y3JvcCwyMzAxLDE4MDAsNzk3LDA.jpg" alt="Prop. t.presentación_henry"><div class="gallery-overlay"><h3>Tarjeta Presentación Henry</h3></div></a>
+                    <a href="https://www.behance.net/gallery/67023823/Barber-shop_logo" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/5f725e67023823.Y3JvcCw2NTUsNTEyLDQ0Nyw4Nw.jpg" alt="Barber shop_logo"><div class="gallery-overlay"><h3>Logo Barber Shop</h3></div></a>
+                    <a href="https://www.behance.net/gallery/67023671/logo-Henry-Jacob-2018" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/3111d967023671.Y3JvcCwxNDAwLDEwOTUsMCw1MDI.jpg" alt="logo Henry Jacob 2018"><div class="gallery-overlay"><h3>Logo Henry Jacob 2018</h3></div></a>
+                    <a href="https://www.behance.net/gallery/45537773/web-entomologiacl" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/57c9b545537773.Y3JvcCwxMDIyLDgwMCwxNzQsMA.jpg" alt="web entomologia.cl"><div class="gallery-overlay"><h3>Web entomologia.cl</h3></div></a>
+                    <a href="https://www.behance.net/gallery/45537667/web-desiertofloridocl" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/0c0af945537667.Y3JvcCwxMjg3LDEwMDcsNjYsMA.jpg" alt="web desiertoflorido.cl"><div class="gallery-overlay"><h3>Web desiertoflorido.cl</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41725709/portada-photobook-artesanias" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/3fb05e41725709.Y3JvcCwyNTQ4LDE5OTMsMjI3LDA.png" alt="portada photobook artesanias"><div class="gallery-overlay"><h3>Portada Photobook Artesanías</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41725533/HR-J-Tattoo-tarjeta-de-presentacion" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/98adc941725533.Y3JvcCwzMDY4LDI0MDAsNjgsMA.jpg" alt="HR. J. Tattoo tarjeta de presentación"><div class="gallery-overlay"><h3>Tarjeta de Presentación HR. J. Tattoo</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41725445/HR-J-Tattoo-logo" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/1598b041725445.Y3JvcCwxOTE3LDE1MDAsNDIsMA.jpg" alt="HR. J. Tattoo logo"><div class="gallery-overlay"><h3>Logo HR. J. Tattoo</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41725021/Desierto-Florido" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/4f3aa041725021.Y3JvcCwzMDY4LDI0MDAsMTM2LDA.jpg" alt="Desierto Florido"><div class="gallery-overlay"><h3>Desierto Florido</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41724867/MC-Barber-Shop-diseno-de-marca" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/bef36541724867.Y3JvcCwxMzQyLDEwNTAsMjksMA.jpg" alt="MC Barber Shop, diseño de marca"><div class="gallery-overlay"><h3>Branding MC Barber Shop</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41724775/Pura-tinta-chile" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/fa8f4d41724775.Y3JvcCwzMDM3LDIzNzYsNTk0LDA.jpg" alt="Pura tinta chile"><div class="gallery-overlay"><h3>Pura Tinta Chile</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41724695/RCM-Ingenieria-ltda-(rediseno)" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/8709a141724695.Y3JvcCwxMzQyLDEwNTAsMjksMA.jpg" alt="RCM Ingenieria ltda. (rediseño)"><div class="gallery-overlay"><h3>Rediseño RCM Ingeniería</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41724575/Branding-Makers-agency" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/b9dca841724575.Y3JvcCwyNTQ4LDE5OTMsMjI3LDA.jpg" alt="Branding Makers agency"><div class="gallery-overlay"><h3>Branding Makers Agency</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41724471/Cultura-Tattoo-chile-afiche" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/1e4be541724471.Y3JvcCw5OTksNzgyLDAsMzU4.jpg" alt="Cultura Tattoo chile afiche"><div class="gallery-overlay"><h3>Afiche Cultura Tattoo Chile</h3></div></a>
+                    <a href="https://www.behance.net/gallery/41723811/Afiche-Proyecto-Pura-Tinta-chile" target="_blank" class="gallery-item reveal"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/1c5d2741723811.Y3JvcCwxMzQyLDEwNTAsMjksMA.jpg" alt="Afiche Proyecto Pura Tinta chile"><div class="gallery-overlay"><h3>Afiche Proyecto Pura Tinta</h3></div></a>
+
+                </div>
+                 <div class="gallery-cta reveal">
+                    <a href="https://www.behance.net/camilobg" target="_blank" class="secondary-button">
+                        <i class="ph ph-behance-logo"></i> Ver todos los proyectos en Behance
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section section-padding">
+            <div class="container">
+                <h2 class="section-title reveal">Lo que dicen de mi trabajo</h2>
+                <div class="grid-2-col">
+                    <div class="testimonial-card reveal">
+                        <i class="ph ph-quotes"></i>
+                        <cite>
+                            <strong>Juan Alfaro</strong>
+                            <span>Director Comercial & Socio Fundador de Artifices Creative Studio</span>
+                        </cite>
+                    </div>
+                    <div class="testimonial-card reveal">
+                        <i class="ph ph-quotes"></i>
+                        <cite>
+                            <strong>Flavio Pavez</strong>
+                            <span>Gerente de Marketing de Cervecería Principal Tübinger</span>
+                        </cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education-section section-padding">
+            <div class="container">
+                <h2 class="section-title reveal">Formación Académica</h2>
+                <div class="grid-2-col">
+                     <div class="education-card reveal"><i class="ph ph-graduation-cap"></i><h3>Licenciado en Diseño Gráfico</h3><p class="institution">Instituto Profesional Duoc UC</p><p class="date">2011 - 2015</p></div>
+                     <div class="education-card reveal"><i class="ph ph-circuitry"></i><h3>Técnico en Electrónica</h3><p class="institution">Liceo Industrial Saint Lawrence</p><p class="date">2006 - 2009</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="main-footer section-padding">
+        <div class="container">
+            <h2 class="reveal">¿Tienes un proyecto en mente?</h2>
+            <p class="reveal">Estoy disponible para colaborar en tu próximo desafío creativo.</p>
+            <div class="contact-links reveal">
+                <a href="mailto:camilo.designer92@gmail.com" class="contact-link"><i class="ph ph-envelope"></i><span>Email</span></a>
+                <a href="https://cl.linkedin.com/in/camilo-bustamante-guti%C3%A9rrez-7aaa7b36b" target="_blank" class="contact-link"><i class="ph ph-linkedin-logo"></i><span>LinkedIn</span></a>
+                <a href="https://www.behance.net/camilobg" target="_blank" class="contact-link"><i class="ph ph-behance-logo"></i><span>Behance</span></a>
+                <a href="tel:+56941522769" class="contact-link"><i class="ph ph-phone"></i><span>Teléfono</span></a>
+            </div>
+            <div class="footer-bottom">
+                <p>Santiago de Chile • 2025 • Diseñado y desarrollado por Camilo Bustamante</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
